@@ -7,6 +7,12 @@ dependencies:
  - cmake
  - r-essentials
  - r-rgl
+ - bioconductor-scran
+ - bioconductor-slingshot
+ - bioconductor-monocle
+ - r-gam
+ - bioconductor-clusterexperiment
+ - bioconductor-mast
  - pandas
  - numpy
  - scipy
