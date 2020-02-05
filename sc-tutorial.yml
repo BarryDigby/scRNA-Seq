@@ -34,6 +34,7 @@ dependencies:
  - seaborn
  - statsmodels
  - python-igraph
+ - leidenalg
  - louvain
  - r-rngtools
  - bioconductor-rhdf5lib
