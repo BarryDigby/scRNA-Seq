@@ -5,7 +5,7 @@ gene_max = 10000
 
 #setup working directory
 import os
-os.chdir("/data/MA5112/Practicals/scRNA-Seq/")
+os.chdir("ADD_YOUR_PATH_HERE")
 
 from subprocess import call
 import numpy as np
@@ -15,7 +15,7 @@ import sys, collections
 
 tr2g = {}
 trlist = []
-with open("Assets/t2g.txt") as f:
+with open("../Assets/t2g.txt") as f:
     for line in f:
         l = line.split()
         tr2g[l[0]] = l[1]
@@ -25,7 +25,7 @@ genes = list(set(tr2g[t] for t in tr2g))
 
 # load equivalence classes
 ecs = {}
-with open('Analysis_output/sorted/bus_output/matrix.ec') as f:
+with open('bus_out/matrix.ec') as f:
     for line in f:
         l = line.split()
         ec = int(l[0])
@@ -41,7 +41,7 @@ def ec2g(ec):
 cell_gene = collections.defaultdict(lambda: collections.defaultdict(float))
 pbar=None
 pumi=None
-with open('Analysis_output/counts/output.sort.txt') as f:
+with open('output_sort.txt') as f:
     gs = set()
     for line in f:
         l = line.split()
@@ -120,7 +120,7 @@ with open(outfile, 'w') as of:
             of.write("%d %d %f\n"%(x[0],bcid,x[1]))
 
 gene_names = {}
-with open("Assets/t2g.txt") as f:
+with open("../Assets/t2g.txt") as f:
     f.readline()
     for line in f:
         t,g,gn = line.split()
