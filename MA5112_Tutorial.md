@@ -106,3 +106,6 @@ Your output folder should contain:
 ***
 
 Do not worry about getting the files off of lugh. I will provide outputs from analysis of 5K_pbmc files that were too large to run during the tutorial. 
+
+### Scanpy Analysis:
+Unzip the file provided for the analysis and cd into the directory. Start your conda scRNA environment as instructed [at this link](https://github.com/BarryDigby/scRNA-Seq/wiki/Conda-Environment-for-Analysis). 
